@@ -1,0 +1,58 @@
+@import "../../styles/partials/variable";
+@import "../../styles/partials/mixins";
+
+.home-menu {
+  width: 100%;
+  padding: 6px 25px;
+  @include flex-container(
+    $direction: null,
+    $justify-content: space-between,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
+  &__filter {
+    img {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__brand {
+    img {
+      margin-right: 7.143px;
+    }
+    &__name {
+      @include font(
+        $font-family: DM-Sans,
+        $font-color: $color-black,
+        $font-size: 19.048px,
+        $font-weight: $bold,
+        $font-style: null
+      );
+      line-height: 25px;
+      letter-spacing: 0.238px;
+      text-transform: capitalize;
+    }
+    @include flex-container(
+      $direction: null,
+      $justify-content: null,
+      $align-items: center,
+      $flex-wrap: nowrap
+    );
+  }
+  &__profile { 
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    img {
+      width: 35px;
+      height: 35px;
+      flex-shrink: 0;
+      border-radius: 35px;
+    }
+  }
+}

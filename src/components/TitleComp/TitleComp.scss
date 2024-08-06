@@ -1,0 +1,42 @@
+@import "../../styles/partials/variable";
+@import "../../styles/partials/mixins";
+
+.title {
+  background-color: $color-white;
+  position:sticky;
+  z-index: 1;
+  top:0;
+  
+  &__list {
+    @include flex-container(
+      $justify-content: space-between,
+      $align-items: center
+    );
+    padding:0 24px; 
+    height:55px;
+
+    &__icon {
+      font-size: 18px;
+    }
+
+    a {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+
+    &__text {
+      @include font($font-size: 16, $font-style: normal, $font-weight: $bold, $font-family: DM-Sans);
+      line-height: 20px; /* 125% */
+      letter-spacing: 0.2px;
+      &.hide {
+        display:none;
+      }
+      &.show {
+        display: block;
+      }
+    }
+  }
+}

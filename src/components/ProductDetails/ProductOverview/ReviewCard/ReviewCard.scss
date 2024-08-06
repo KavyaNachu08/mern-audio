@@ -1,0 +1,74 @@
+@import "../../../../styles/partials/font";
+@import "../../../../styles/partials/variable";
+.review-card {
+  padding: 0 23px;
+  display: flex;
+  margin-top: 17px;
+  &:first-child {
+    margin-top: 29px;
+  }
+  &__content {
+    width: 100%;
+    margin-left: 13px;
+    &__name-time-wrapper {
+      width: 100%;
+
+      .name-rating-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .user-name {
+          font-family: DM-Sans;
+          font-size: $medium;
+          font-weight: $regular;
+          line-height: 1.25rem;
+          letter-spacing: 0.0125rem;
+          text-transform: capitalize;
+        }
+      }
+      .time {
+        font-family: DM-Sans;
+        font-size: $x-small;
+        font-weight: $regular;
+        line-height: 1rem;
+        letter-spacing: 0.0125rem;
+        color: $color-grey-3;
+        height: 16px;
+      }
+      .rating {
+        display: flex;
+        margin-top: 4px;
+        width: fit-content;
+        li {
+          margin-right: 5px;
+          height: 16px;
+          width: 16px;
+          &:last-child {
+            margin-right: 0;
+          }
+          img {
+            width: 13.33px;
+            height: 12.68px;
+          }
+        }
+      }
+    }
+    &__review {
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      margin-top: 15px;
+    }
+    &__images {
+      display: flex;
+      margin-top: 15px;
+      li {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

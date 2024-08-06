@@ -1,0 +1,31 @@
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/mixins";
+
+
+.controls {
+  @include flex-container(
+    $direction: null,
+    $justify-content: space-between,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
+  
+  &__minus , &__plus {
+    border-radius: 10px;
+    border: 1px solid $color-grey-2;
+    background: $color-white;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .controls__number{
+    margin:0 25px;
+  }
+}

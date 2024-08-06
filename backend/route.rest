@@ -1,0 +1,30 @@
+
+
+# POST http://localhost:3000/api/add_user
+# Content-Type: application/json
+# {
+#   "name": "kavya",
+#   "email":  "kavya@example.com",
+#   "password": "Cyber"
+# }
+
+# POST http://localhost:3000/api/add_user
+# Content-Type: application/json
+
+POST http://localhost:3000/api/add_user
+Content-Type: application/json
+
+{
+  "name": "kavya",
+  "email":  "kavya@example.com",
+  "password": "Cyber"
+}
+
+
+
+# GET http://localhost:3000/api/users/
+# Content-Type: application/json
+
+
+# GET http://localhost:3000/users
+# Content-Type: application/json

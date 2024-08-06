@@ -1,0 +1,59 @@
+@import "../../../styles/partials/mixins";
+@import "../../../styles/partials/variable";
+
+.filter-page {
+  position: fixed;
+  bottom: -100%;
+  @include flex-container($direction: column);
+
+  padding: 1.5rem;
+  border-radius: 1.875rem 1.875rem 0rem 0rem;
+  background-color: $color-white;
+  transition: all 0.5s ease;
+
+  &.show {
+    bottom: 0;
+  }
+
+  &__header {
+    @include flex-container($justify-content: space-between);
+    margin-bottom: 2.15rem;
+    &__title {
+      color: $color-black;
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.25rem; /* 150% */
+      letter-spacing: 0.0125rem;
+    }
+
+    &__close {
+      font-size: 1.5rem;
+      color: $color-black;
+      background-color: $color-white;
+      border: none;
+      outline: transparent;
+    }
+  }
+  &__filters {
+    margin-bottom: 2.15rem;
+  }
+
+  &__btn-apply {
+    @include flex-container($justify-content: center, $align-items: center);
+
+    height: 3.125rem;
+    padding: 1.25rem 0.625rem;
+    border-radius: 0.625rem;
+    background: var(--colors-primary, #0acf83);
+    border: none;
+    outline: transparent;
+    font-family: DM-Sans;
+    font-size: 1rem;
+    color: $color-white;
+    font-weight: 700;
+    line-height: 1.25rem; /* 125% */
+    letter-spacing: 0.0125rem;
+  }
+}

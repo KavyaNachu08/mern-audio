@@ -1,0 +1,27 @@
+@import "../../styles/partials/variable";
+
+.search-product-page {
+  &__latest-search {
+    margin: 30px 25px 0 25px;
+    &__heading {
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+    }
+  }
+  &__popular-products-container {
+    margin: 30px 25px 0 25px;
+    &__heading {
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+  }
+}

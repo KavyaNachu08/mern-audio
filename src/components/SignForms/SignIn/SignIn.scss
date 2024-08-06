@@ -1,0 +1,48 @@
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/mixins";
+
+.form {
+  padding: 250px 0 90px 0;
+
+  &__forgot {
+    @include font(
+      $font-size: 14,
+      $font-style: normal,
+      $font-weight: $regular,
+      $font-color: $color-white,
+      $font-family: DM-Sans
+    );
+    @include text-properties-common($line-height: 20px, $letter-spacing: 0.2px);
+    @include flex-container($justify-content: center);
+  }
+
+  &__account {
+    @include font(
+      $font-size: 14,
+      $font-style: normal,
+      $font-weight: $regular,
+      $font-color: $color-white,
+      $font-family: DM-Sans
+    );
+    @include text-properties-common(
+      $line-height: 20px,
+      $letter-spacing: 0.2px,
+      $text-align: center
+    );
+    margin-top: 24px;
+
+    &__redirect {
+      color: $color-green;
+      text-decoration: underline;
+    }
+  }
+  .error-message {
+    font-family: DM-Sans;
+    display: block;
+
+    color: $color-green;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

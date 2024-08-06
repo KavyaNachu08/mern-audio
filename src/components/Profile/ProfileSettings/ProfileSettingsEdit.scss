@@ -1,0 +1,57 @@
+@import '../../../styles/partials/mixins';
+@import '../../../styles/partials/variable';
+
+.profile-settings {
+  border-top: 1px solid $color-grey-2;
+  width: 100%;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.15);
+  &__column {
+    @include flex-container(
+      $direction: column,
+      $justify-content: null,
+      $align-items: flex-start,
+      $flex-wrap: null
+    );
+
+    &__title {
+      padding: 20px 24px;
+      @include font(
+        $font-family: DM-Sans,
+        $font-color: $color-grey-3,
+        $font-size: 14,
+        $font-weight: $regular,
+        $font-style: null
+      );
+      letter-spacing: 0.2px;
+      line-height: 18px;
+      text-transform: capitalize;
+    }
+    .settings-list {
+      width: 100%;
+      &__item {
+       
+        @include flex-container(
+          $direction: column,
+          $justify-content: null,
+          $align-items: flex-start,
+          $flex-wrap: null
+        );
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+      }
+      &__link {
+        width: 100%;
+        text-transform: capitalize;
+        padding: 20px 24px;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        @include font(
+          $font-family: DM-Sans,
+          $font-color: $color-black,
+          $font-size: 16,
+          $font-weight: $regular,
+          $font-style: null
+        );
+      }
+    }
+  }
+}

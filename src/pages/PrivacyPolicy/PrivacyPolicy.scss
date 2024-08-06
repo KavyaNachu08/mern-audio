@@ -1,0 +1,60 @@
+@import '../../styles/partials/variable';
+@import '../../styles/partials/mixins';
+
+.policy {
+    &__heading {
+        @include font($font-weight:$bold, $font-family: DM-Sans, $font-size:32);
+        margin:25px auto;
+        text-align: center;
+    }
+
+    &__list {
+        margin:10px;
+        list-style: decimal;
+
+        &__text {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            line-height: 25px;
+            @include font($font-weight:$bold, $font-family: DM-Sans, $font-size: 20);
+        }
+
+        &__description {
+            margin-bottom: 15px;
+            margin-left: -20px;
+            line-height: 22px;
+            font-weight: $regular;
+            font-family: DM-Sans;
+        }
+
+        & li {
+            margin-left: 20px;
+
+            &::marker {
+                font-weight: $regular;
+                font-family: DM-Sans;
+            }
+        }
+
+        & .listitem {
+            list-style: disc;
+            margin-bottom: 10px;
+            line-height: 22px;
+            @include font($font-family: DM-Sans, $font-weight:$regular);
+
+            &__text {
+                text-transform: uppercase;
+                line-height: 25px;
+                @include font($font-weight:$bold, $font-family: DM-Sans, $font-size: 16);
+            }
+    
+            &__description {
+                margin-bottom: 15px;
+                margin-left: -20px;
+                line-height: 22px;
+                font-weight: $regular;
+                font-family: DM-Sans;
+            }
+        }
+    }
+}

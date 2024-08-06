@@ -1,0 +1,25 @@
+@import "../../styles/partials/variable";
+@import "../../styles/partials/font";
+.latest-search-item {
+  margin-top: 25px;
+  &:first-child {
+    margin-top: 20px;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__icon-text-wrapper {
+      display: flex;
+      align-items: center;
+      &__text {
+        font-family: DM-Sans;
+        font-size: $small;
+        font-weight: $regular;
+        line-height: 1.25rem;
+        letter-spacing: 0.0125rem;
+        margin-left: 10px;
+      }
+    }
+  }
+}

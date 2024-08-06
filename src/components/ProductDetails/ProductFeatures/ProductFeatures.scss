@@ -1,0 +1,23 @@
+@import "../../../styles/partials/font";
+@import "../../../styles/partials/variable";
+
+.product-features {
+  padding: 0 24px 0 25px;
+  margin-top: 30px;
+  &__title {
+    font-family: DM-Sans;
+    font-size: $medium;
+    font-weight: $bold;
+    line-height: 1.5rem;
+    letter-spacing: 0.0125rem;
+    text-transform: capitalize;
+  }
+  &__description {
+    font-family: DM-Sans;
+    font-size: $small;
+    font-weight: $regular;
+    line-height: 1.375rem;
+    letter-spacing: 0.0125rem;
+    margin-top: 13px;
+  }
+}

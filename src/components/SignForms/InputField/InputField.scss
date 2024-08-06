@@ -1,0 +1,53 @@
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/mixins";
+
+.form__input {
+  @include border-property($width: 1px, $style: solid, $color: $color-grey-2);
+  @include flex-container($align-items: center);
+  border-radius: 10px;
+  padding: 0 15px;
+  height: 50px;
+  background-color: $color-white;
+  margin: 0 24px 20px 25px;
+  position: relative;
+
+  &__errorMessage {
+    position: absolute;
+    top: 123%;
+    margin-bottom: 10px;
+    color: $color-white;
+    font-family: DM-Sans;
+
+    &.show {
+      color: $color-green;
+    }
+  }
+
+  &__icon {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    color: $color-grey-2;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    margin-left: 12px;
+    flex-grow: 1;
+    padding-block: 0;
+    padding-inline: 0;
+    @include font(
+      $font-size: 14,
+      $font-style: normal,
+      $font-weight: $regular,
+      $font-color: $color-black,
+      $font-family: DM-Sans
+    );
+    @include text-properties-common($line-height: 20px, $letter-spacing: 0.2px);
+
+    &::placeholder {
+      color: $color-grey-2;
+    }
+  }
+}

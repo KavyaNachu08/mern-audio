@@ -1,0 +1,48 @@
+@import "../../styles/partials/font";
+@import "../../styles/partials/variable";
+
+.popular-product-card {
+  margin-top: 25px;
+  &:first-child {
+    margin-top: 20px;
+  }
+  &__container {
+    display: flex;
+
+    &__image-wrapper {
+      height: 75px;
+      width: 75px;
+      background-color: $color-grey;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 55px;
+        width: 55px;
+        object-fit: contain;
+      }
+    }
+  }
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: calc(100% - 90px);
+    &__name {
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.3125rem;
+      letter-spacing: 0.0125rem;
+    }
+    &__price {
+      margin-top: 5px;
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $bold;
+      line-height: 1.125rem;
+      letter-spacing: 0.0125rem;
+    }
+  }
+}

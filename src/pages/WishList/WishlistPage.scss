@@ -1,0 +1,12 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variable";
+
+.wishlist-item-container {
+  .product-cart-details__data {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-bag-details__data {
+    flex-direction: row;
+  }
+}

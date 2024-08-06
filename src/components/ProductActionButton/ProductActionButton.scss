@@ -1,0 +1,30 @@
+@import "../../styles/partials/variable";
+
+.product-action-button-wrapper {
+  margin: 27px 24px 30px 25px;
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: $color-green;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &__text {
+      color: $color-white;
+      text-align: center;
+      text-transform: capitalize;
+      border: none;
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $bold;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+    }
+  }
+}

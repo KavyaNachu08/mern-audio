@@ -1,0 +1,15 @@
+@import "../../../styles//partials/variable";
+
+.product-image {
+  background-color: $color-grey;
+  border-radius: 10px;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    width: 285px;
+    height: 391px;
+    object-fit: contain;
+  }
+}

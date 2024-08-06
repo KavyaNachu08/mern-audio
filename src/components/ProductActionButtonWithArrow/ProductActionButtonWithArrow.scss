@@ -1,0 +1,40 @@
+@import "../../styles/partials/variable";
+
+.product-action-button-with-arrow-wrapper {
+  margin: 27px 24px 30px 25px;
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: $color-green;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+    }
+    &__text {
+      text-align: center;
+      text-transform: capitalize;
+      border: none;
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $bold;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      margin-left: 30px;
+    }
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25px;
+      width: 25px;
+      margin-right: 30px;
+      svg {
+        padding: 6.25px 9.38px;
+      }
+    }
+  }
+}

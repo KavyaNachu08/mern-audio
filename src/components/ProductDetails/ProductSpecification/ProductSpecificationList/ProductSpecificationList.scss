@@ -1,0 +1,32 @@
+@import "../../../../styles/partials/font";
+@import "../../../../styles/partials/variable";
+
+.product-specification-list {
+  margin: 20px auto auto auto;
+
+  &__item {
+    display: flex;
+    .category {
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $semi-bold;
+      line-height: 1.5rem;
+      letter-spacing: 0.0125rem;
+      text-transform: capitalize;
+    }
+    .category-text {
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $medium;
+      line-height: 1.5rem;
+      letter-spacing: 0.0125rem;
+      text-transform: capitalize;
+    }
+    .list-text {
+      width: 50%;
+      padding: 10px 5px;
+      border: 1px solid $color-grey;
+      overflow-x: scroll;
+    }
+  }
+}

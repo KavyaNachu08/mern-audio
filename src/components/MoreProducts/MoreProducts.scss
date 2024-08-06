@@ -1,0 +1,34 @@
+@import "../../styles/partials/variable";
+.more-products {
+  background-color: $color-grey;
+  margin-top: 33px;
+  &__heading-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 24px 0 25px;
+    .heading {
+      font-family: DM-Sans;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      text-transform: capitalize;
+    }
+    a {
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      text-transform: capitalize;
+      color: $color-grey-3;
+    }
+  }
+  &__more-product-list {
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-bottom: 38px;
+    display: flex;
+    overflow-x: scroll;
+  }
+}
